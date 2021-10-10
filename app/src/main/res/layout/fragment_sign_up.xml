@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/marketplace_white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_label_mob_number"
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="@string/label_mobile_number" />
+
+                <TextView
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_toRightOf="@+id/tv_label_mob_number"
+                    android:text="@string/mandatory_mark"
+                    android:textColor="@color/color_mandatory_field" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_mobile_number"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/tv_label_first_name"
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_first_name" />
+
+                <TextView
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_toRightOf="@+id/tv_label_first_name"
+                    android:text="@string/mandatory_mark"
+                    android:textColor="@color/color_mandatory_field" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_first_name"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="30"
+                android:digits="@string/str_input_name"
+                android:paddingBottom="@dimen/dp5" />
+
+            <TextView
+                android:id="@+id/tv_label_middle_name"
+                style="@style/label_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/label_middle_name" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_middle_name"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="50"
+                android:digits="@string/str_input_name"
+                android:paddingBottom="@dimen/dp5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/tv_label_last_name"
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_last_name" />
+
+                <TextView
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_toRightOf="@+id/tv_label_last_name"
+                    android:text="@string/mandatory_mark"
+                    android:textColor="@color/color_mandatory_field" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_last_name"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="50"
+                android:digits="@string/str_input_name"
+                android:paddingBottom="@dimen/dp5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/tv_label_address"
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_address" />
+
+                <TextView
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_toRightOf="@+id/tv_label_address"
+                    android:text="@string/mandatory_mark"
+                    android:textColor="@color/color_mandatory_field" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_current_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/iv_location"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_current_location" />
+
+                    <TextView
+                        android:id="@+id/tv_label_current_location"
+                        style="@style/label_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp3"
+                        android:layout_toRightOf="@+id/iv_location"
+                        android:text="@string/label_current_location" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_info1"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_info" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_address1"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLines="3"
+                android:maxLength="150"
+                android:digits="@string/str_input_text_address"
+                android:paddingBottom="@dimen/dp5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_info2"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_info" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_address2"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="150"
+                android:digits="@string/str_input_text_address"
+                android:paddingBottom="@dimen/dp5" />
+
+            <TextView
+                style="@style/label_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/label_area_locality" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_area_locality"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:maxLength="100"
+                android:digits="@string/str_input_text_address"
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5" />
+
+            <TextView
+                style="@style/label_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/label_address_instruction" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_address_instruction"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="100"
+                android:digits="@string/str_input_text_address"
+                android:paddingBottom="@dimen/dp5" />
+
+            <TextView
+                style="@style/label_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/label_area" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_area"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="100"
+                android:digits="@string/str_input_text_address"
+                android:paddingBottom="@dimen/dp5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/tv_label_state"
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_state" />
+
+                <TextView
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_toRightOf="@+id/tv_label_state"
+                    android:text="@string/mandatory_mark"
+                    android:textColor="@color/color_mandatory_field" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_state"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="80"
+                android:digits="@string/str_input_name"
+                android:paddingBottom="@dimen/dp5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/tv_label_city"
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_city" />
+
+                <TextView
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_toRightOf="@+id/tv_label_city"
+                    android:text="@string/mandatory_mark"
+                    android:textColor="@color/color_mandatory_field" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_city"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textCapWords"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="80"
+                android:digits="@string/str_input_name"
+                android:paddingBottom="@dimen/dp5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/tv_label_pincode"
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_pincode" />
+
+                <TextView
+                    style="@style/regular_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_toRightOf="@+id/tv_label_pincode"
+                    android:text="@string/mandatory_mark"
+                    android:textColor="@color/color_mandatory_field" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_pincode"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5" />
+
+            <TextView
+                android:id="@+id/tv_label_email"
+                style="@style/label_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/label_email" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_email"
+                style="@style/regular_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edt_selector"
+                android:inputType="textEmailAddress"
+                android:paddingTop="@dimen/dp5"
+                android:maxLength="150"
+                android:digits="@string/str_input_text_email_user"
+                android:paddingBottom="@dimen/dp5" />
+
+            <CheckBox
+                android:id="@+id/ch_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp40"
+                android:layout_marginBottom="@dimen/dp45"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/str_accept_terms"
+                android:textColor="@color/hyperlink_color"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp8"
+        android:layout_above="@+id/rl_bottom"
+        android:background="@drawable/top_shadow_gradient" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/marketplace_white"
+        android:elevation="@dimen/dp2">
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp35"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/opensans_semibold"
+            android:paddingLeft="@dimen/dp40"
+            android:paddingRight="@dimen/dp40"
+            android:text="@string/btn_sign_up"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/marketplace_white" />
+    </RelativeLayout>
+</RelativeLayout>

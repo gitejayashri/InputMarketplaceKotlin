@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#4CAF50</color>
+<!--    <color name="theme_color">#15A64E</color>-->
+    <color name="theme_color">#4CAF50</color>
+    <color name="marketplace_white">#FFFFFF</color>
+    <color name="light_gray">#f6f6f6</color>
+    <color name="text_color">#000000</color>
+    <color name="grey_border_color">#DEDEDF</color>
+    <color name="dialog_border_color">#707070</color>
+    <color name="bg_toast">#5E5E5E</color>
+    <color name="color_mandatory_field">#FF0000</color>
+    <color name="bg_product_image">#F6F6F6</color>
+    <color name="divider_bg">#D1D1D1</color>
+    <color name="label_text_color">#000000</color>
+    <color name="hyperlink_color">#001AFF</color>
+    <color name="search_text_color">#66000000</color>
+    <color name="my_cart_page_divider">#9A9A9A</color>
+
+</resources>

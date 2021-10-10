@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="@dimen/dp12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_border"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp25"
+        android:paddingBottom="@dimen/dp25"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        >
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:text="@string/str_enter_otp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp25"
+            android:gravity="center_horizontal">
+
+            <EditText
+                style="@style/regular_text_style"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:background="@drawable/bg_grey_border"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="1" />
+
+            <EditText
+                style="@style/regular_text_style"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp15"
+                android:background="@drawable/bg_grey_border"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="1" />
+
+            <EditText
+                style="@style/regular_text_style"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp15"
+                android:background="@drawable/bg_grey_border"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="1" />
+
+            <EditText
+                style="@style/regular_text_style"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp15"
+                android:background="@drawable/bg_grey_border"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bg_green_rounded_border"
+                android:fontFamily="@font/opensans_semibold"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:text="@string/btn_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/sp14" />
+
+            <Button
+                android:id="@+id/btn_verify_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/opensans_semibold"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:text="@string/btn_verify_otp"
+                android:textAllCaps="false"
+                android:textColor="@color/marketplace_white"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

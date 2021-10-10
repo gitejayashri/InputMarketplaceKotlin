@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:background="@color/marketplace_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp15"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp16"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/theme_color"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="@string/label_confirm_delivery_address" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10">
+
+
+            <TextView
+                android:id="@+id/tv_label_address"
+                style="@style/label_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_address" />
+
+            <TextView
+                style="@style/label_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp2"
+                android:layout_toRightOf="@+id/tv_label_address"
+                android:text="@string/mandatory_mark"
+                android:textColor="@color/color_mandatory_field" />
+
+            <RelativeLayout
+                android:id="@+id/rl_current_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/iv_location"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_current_location" />
+
+                <TextView
+                    android:id="@+id/tv_label_current_location"
+                    style="@style/label_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:layout_toRightOf="@+id/iv_location"
+                    android:text="@string/label_current_location" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_info1"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_info" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_address1"
+            style="@style/regular_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_selector"
+            android:digits="@string/str_input_text_address"
+            android:inputType="textCapWords"
+            android:maxLength="500"
+            android:maxLines="3"
+            android:focusedByDefault="false"
+            android:imeOptions="actionNext"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/dp5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_info2"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_info" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_address2"
+            style="@style/regular_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_selector"
+            android:digits="@string/str_input_text_address"
+            android:inputType="textCapWords"
+            android:maxLength="150"
+            android:focusedByDefault="false"
+            android:imeOptions="actionNext"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/dp5" />
+
+        <TextView
+            style="@style/label_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="@string/label_area_locality" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_area_locality"
+            style="@style/regular_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_selector"
+            android:digits="@string/str_input_text_address"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:focusedByDefault="false"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/dp5" />
+
+        <TextView
+            style="@style/label_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="@string/label_address_instruction" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_address_instruction"
+            style="@style/regular_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_selector"
+            android:digits="@string/str_input_text_address"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:paddingTop="@dimen/dp5"
+            android:focusedByDefault="false"
+            android:imeOptions="actionDone"
+            android:paddingBottom="@dimen/dp5" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_marginBottom="@dimen/dp30"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp50"
+            android:paddingRight="@dimen/dp50"
+            android:text="@string/btn_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/marketplace_white"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

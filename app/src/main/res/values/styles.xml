@@ -1,0 +1,134 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MarketplaceBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:typeface">serif</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MarketplaceAppTheme" parent="MarketplaceBaseTheme">
+
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryDark">@color/theme_color</item>
+        <item name="colorAccent">@color/theme_color</item>
+        <item name="android:typeface">serif</item>
+        <item name="colorSurface">@color/marketplace_white</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:itemBackground">@color/marketplace_white</item>
+        <item name="android:background">@color/marketplace_white</item>
+        <item name="android:padding">@dimen/dp1</item>
+
+
+    </style>
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/shape_dropdown_normal</item>
+    </style>
+
+    <style name="PopupOverlay" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:typeface">serif</item>
+<!--                <item name="android:itemBackground">@color/colorWhite</item>-->
+        <item name="android:itemBackground">@color/marketplace_white</item>
+
+    </style>
+
+    <style name="menu_text_style" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu">
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textAllCaps">false</item>
+        <!--        <item name="android:padding">@dimen/dp5</item>-->
+        <!--<item name="android:typeface">serif</item>-->
+    </style>
+
+    <style name="bold_text_style">
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/theme_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <!--<item name="android:typeface">serif</item>-->
+    </style>
+
+    <style name="regular_text_style">
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <!--<item name="android:typeface">serif</item>-->
+    </style>
+
+    <style name="label_text_style">
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <!--<item name="android:typeface">serif</item>-->
+    </style>
+
+    <style name="Marketplace_Theme_Dialog" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="Text_Theame" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+
+    </style>
+
+
+    <style name="MaterialThemeDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/marketplace_white</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/TitleTextStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/BodyTextStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialAlertDialog.Rounded</item>    </style>
+
+    <style name="TitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:gravity">center_horizontal</item>
+
+    </style>
+
+    <style name="BodyTextStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MaterialAlertDialog.Rounded" parent="">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="BottomSheetDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+</resources>

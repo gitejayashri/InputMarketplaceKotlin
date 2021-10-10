@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/marketplace_white">
+
+
+        <EditText
+            android:id="@+id/et_search_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp15"
+            android:background="@drawable/bg_round_search"
+            android:drawableRight="@drawable/ic_search"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="@string/hint_product_search"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingTop="@dimen/dp7"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp7"
+            android:singleLine="true"
+            android:textColor="@color/search_text_color"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_product_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn_continue"
+            app:layout_constraintTop_toBottomOf="@+id/et_search_product" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/btn_continue"
+            android:textSize="@dimen/sp17"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/marketplace_white"
+            app:layout_constraintTop_toBottomOf="@+id/rv_product_list"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

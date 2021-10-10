@@ -1,0 +1,98 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/theme_color"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="@dimen/toolbar_menu_width"
+            android:layout_height="@dimen/toolbar_menu_width"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back_arrow"
+            android:layout_width="@dimen/toolbar_menu_width"
+            android:layout_height="@dimen/toolbar_menu_width"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_arrow_back_white" />
+
+        <include layout="@layout/layout_cart_count" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/marketplace_white"
+            android:textSize="@dimen/page_title_size" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_account"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toLeftOf="@+id/rl_cart"
+            android:padding="@dimen/dp5"
+            android:paddingLeft="@dimen/dp2"
+            android:src="@drawable/ic_account_white"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_add_product"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toLeftOf="@+id/iv_account"
+            android:padding="@dimen/dp5"
+            android:paddingLeft="@dimen/dp2"
+            android:src="@drawable/ic_add_product"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_edit_profile"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toLeftOf="@+id/rl_cart"
+            android:padding="@dimen/dp5"
+            android:paddingLeft="@dimen/dp2"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_order_history"
+            android:layout_width="@dimen/toolbar_icon_width"
+            android:layout_height="@dimen/toolbar_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toLeftOf="@+id/iv_edit_profile"
+            android:padding="@dimen/dp5"
+            android:paddingLeft="@dimen/dp2"
+            android:src="@drawable/ic_order_history"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

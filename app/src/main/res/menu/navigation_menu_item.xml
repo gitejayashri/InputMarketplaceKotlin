@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group0">
+        <item
+            android:id="@+id/menu_item_sign_up"
+            android:icon="@drawable/ic_person"
+            android:title="@string/nav_title_log_in"
+            android:visible="false"/>
+    </group>
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/menu_item_settings"
+            android:icon="@drawable/ic_setting"
+            android:title="@string/nav_title_settings" />
+    </group>
+    <group android:id="@+id/group2">
+
+        <item
+            android:id="@+id/menu_item_terms_of_services"
+            android:icon="@drawable/ic_terms_of_use"
+            android:title="@string/nav_title_terms_of_services" />
+    </group>
+    <group android:id="@+id/group3">
+
+        <item
+            android:id="@+id/menu_item_privacy_policy"
+            android:icon="@drawable/ic_marketplace_privacy_policy"
+            android:title="@string/nav_title_privacy_policy" />
+    </group>
+    <group android:id="@+id/group4">
+
+        <item
+            android:id="@+id/menu_item_about_us"
+            android:icon="@drawable/ic_about_us"
+            android:title="@string/nav_title_about_us" />
+    </group>
+    <group android:id="@+id/group5">
+
+        <item
+            android:id="@+id/menu_item_contact_us"
+            android:icon="@drawable/ic_contact_us"
+            android:title="@string/nav_title_contact_us" />
+    </group>
+
+</menu>
